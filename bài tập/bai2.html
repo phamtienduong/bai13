@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vietnamese=["xanh","đỏ","tím","vàng"];
+        let english=["blue","red","violet","yellow"];
+        let text=prompt("mời nhập từ cần chuyển sang tiếng anh");
+        let index=vietnamese.indexOf(text);
+        if (index!=-1) {
+            console.log(`từ ${text} dịch sang tiếng anh là ${english[index]}`);
+            
+        }else{
+            console.log("từ không tìm kiếm");
+        }
+    </script>
+</body>
+</html>

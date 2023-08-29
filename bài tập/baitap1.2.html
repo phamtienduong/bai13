@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = prompt("Nhập số:");
+        let text="";
+        for (let i = 0; i < numbers.length; i++) {
+            // console.log(numbers[i]);
+            if (numbers[i]%2==0 && numbers[i+1]%2==0) {
+                text+=numbers[i]+" - ";
+            }else{
+                text+=numbers[i];
+            }
+        }
+        console.log(text);
+    </script>
+</body>
+</html>

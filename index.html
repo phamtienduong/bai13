@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+      Array: lưu trữ tập hợp phần tử ( element khác nhau ) lại với nhau.
+      arry: kiểu dữ liệu phức tạp
+      - giá trị lưu ở vùng nhớ Heap
+      -kiểu tham chiếu
+       1.Cách khởi tạo mảng
+        - mảng chứa cấc phần tử ngăn cách với nhau bởi dấu phẩy.
+        - mảng có thể chứa nhiều kiểu dữ liệu khác nhau.
+       2. các thuộc tính riêng của mảng
+       - index: là chỉ mục các phần tử trong mảng:
+       + chỉ mục của mảng được đánh giá bắt đầu từ 0
+       -length : độ dài của mảng
+       3. typeof của array là object
+       -kiểm tra co phải là mảng hay không thì dùng Array.isArray()
+       4. CRUD với mảng
+       - C: Create : thêm mới phần tử trong mảng
+        + dùng push(): phương thức thêm phần tử vào vị trí cuối cùng của mảng
+        + unshift (): phương thức thêm phần tử vào các vị trí đầu tiên của mảng
+        + thêm trực tiếp theo chỉ mục index
+        + splice()
+       - R : Read : đọc hay duyệt các phần tử trong mảng
+        + for : thường 
+        + for-in:in ra chỉ mục index của mảng
+        + for-of: in ra giá trị phần tử trong mảng
+       - U : Update : cập nhập phần tử trong mảng
+        + update: trực tiếp
+        + splice():
+       - D : Delete : xoá phần tử trong mảng
+        + pop(): xoá phần từ cuối cùng trong mảng
+        + shift(): xoá phần tử đầu tiên trong bảng
+        + splice():
+        **************************
+        
+        Các phương thức làm việc với mảng.
+        1. slice
+        - cắt ,sao chép ra 1 mảng mới
+        - dùng cả mảng và chuỗi
+        2.sort
+        -sắp xếp các phần tử trong mảng theo bảng mã asci
+        3.reverse() đảo ngược mảng
+        4. split() cắt chuỗi thành mảng
+        5. join() gộp các phần tử  trong  mảng thành chuỗi .
+        6.toString: chuyển mảng thành chuỗi( có thể chuyển 1 số thành 1 chuỗi)
+        7.indexOf() kiểm tra phần tử có trong mảng hay không nếu có trả về vị trí tìm thấy đầu tiên
+        không trả về -1
+        8. includes: tìm kiếm phần tử trả về true/false
+        9.toUpperCase():chuyển thành chữ hoa
+        10. to LowerCase() chuyển thành chữ thường
+        11.charAt(): lấy kí tự vị trí của chuỗi
+        12.map() dùng để duyệt mảng*****dùng nhiều
+        13. reduce()F***dùng nhiều
+        14.filter()F****dùng nhiều
+        15.forEach()Fúnion
+        16.find()F
+        17.findIndex()
+        18.every()
+        19.some()
+        20.fill(): thay thế các phần tử trong mảng bằng giá trị fill
+        21.concat()
+        22.endWidth()
+        23.starWidth()
+     -->
+     <script>
+      // let students = ["hoa","hồng","thư" ,"lan","thư" ];
+      // let text = "hello rikkei";
+      // let result = students.includes("hoa1")
+
+      let text="hưng béo quá"
+      let result=text.split(" ");
+      for (let i = 0; i < result.length; i++) {
+        result[i]=result[i].slice(0,1)+ result[i].charAt(1).toUpperCase()+ result[i].slice(2);
+      }
+      console.log(result.join(" ")); 
+
+      
+
+      // result[1]=result[1].toUpperCase();
+      // result[6]=result[6].toUpperCase();
+      // result[10]=result[10].toUpperCase();
+
+      // console.log(result.join("")); 
+      // console.log(text.split(" "));
+      //  console.log(students.join(" - "));
+      // console.log(text.slice(5,8));
+      // console.log("độ dài của mảng hay số phần tử trong mảng",students.length);
+      // console.log(typeof{students});
+      // console.log(Array.isArray([]));
+      // let students = ["hoa","hồng"];
+      // students.splice(2,0,"huệ");
+      // console.log(students);
+      // for (let index = 0; index < students.length; index++) {
+      //   console.log("index", students[index]);
+      // }
+      // for (const hieu in students) {
+      //     console.log(students[hieu]);
+      //   }
+      //   for (const hieu of students) {
+      //     console.log(students[hieu]);
+      // }
+      // let result = students.slice(1)
+      // console.log(result);
+
+    //   let x = [5,6,7,8];
+    //   for (let a in x) {
+    //     if(x[a]%2==0){
+    //         break;
+    //     }
+    //     console.log(a);
+    //   }
+    // let a=6;
+    // letb=a;
+    // a=8;
+    // console.log(b);
+    
+
+
+     </script>
+</body>
+</html>
